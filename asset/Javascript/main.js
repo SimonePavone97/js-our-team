@@ -73,34 +73,21 @@ for (let i = 0; i < team.length; i++) {
 }
 
 /*Milestone 2: stampare i dati all'interno di un contenitore nella pagina html in modo dinamico, creando per 
-ciascun membro del team un elemento che conterrà i suoi dati.*/
+ciascun membro del team un elemento che conterrà i suoi dati. + Bonus*/
 
 
 for (let i = 0; i < team.length; i++) {
     document.getElementById("grid").innerHTML += `
     <div class="row">
-    <div class="col">
+    <div class="col m-2">
         <div class="card">
-        <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${team[i]["nome"]}</h5>
-            <p class="card-text">${team[i]["ruolo"]}</p>
-        </div>
+            <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${team[i]["nome"]}</h5>
+                <p class="card-text">${team[i]["ruolo"]}</p>
+            </div>
         </div>
     </div>
         `;
-    /*
-    for(let key in listaFilm[i]){
-        document.getElementById("titolo").innerHTML += `<div>${[key][Nome]}</div>`;
-    }
-    */
+   
 }
-
-
-/*<div class="card text-center" style="width: 18rem;">
-            <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 id="titolo" class="card-title">${team[i]["nome"]}</h5>
-                <p class="card-text">${team[i]["ruolo"]}</p>
-            </div>
-        </div>*/
