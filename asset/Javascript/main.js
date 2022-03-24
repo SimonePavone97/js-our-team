@@ -24,27 +24,42 @@ Buon lavoro!*/
 /*Milestone 1: stampare in console l'elenco dei membri del team, scrivendo separatamente i dettagli di ciascun 
 componente. (FATTO.)*/
 
-let team = 
-[
-    {
-        'nome' :'Wayne Barnett',
-        'ruolo' : 'Founder & CEO',
-        'foto' : 'wayne-barnett-founder-ceo.jpg'
+let team = [{
+        'nome': 'Wayne Barnett',
+        'ruolo': 'Founder & CEO',
+        'foto': 'wayne-barnett-founder-ceo.jpg'
     },
 
     {
-        'nome' :'Angela Caroll',
-        'ruolo' : 'Chief Editor',
-        'foto' : 'angela-caroll-chief-editor.jpg'
+        'nome': 'Angela Caroll',
+        'ruolo': 'Chief Editor',
+        'foto': 'angela-caroll-chief-editor.jpg'
     },
 
     {
-        'nome' :'Walter Gordon',
-        'ruolo' : 'Office Manager',
-        'foto' : 'walter-gordon-office-manager.jpg'
+        'nome': 'Walter Gordon',
+        'ruolo': 'Office Manager',
+        'foto': 'walter-gordon-office-manager.jpg'
+    },
+
+    {
+        'nome': 'Angela Lopez',
+        'ruolo': 'Social Media Manager',
+        'foto': 'angela-lopez-social-media-manager.jpg'
+    },
+
+    {
+        'nome': 'Scott Estrada',
+        'ruolo': 'Developer',
+        'foto': 'scott-estrada-developer.jpg'
+    },
+
+    {
+        'nome': 'Barbara Ramos',
+        'ruolo': 'Graphic Designer',
+        'foto': 'barbara-ramos-graphic-designer.jpg'
     }
 
-    
 ];
 
 
@@ -62,14 +77,17 @@ ciascun membro del team un elemento che conterrà i suoi dati.*/
 
 
 for (let i = 0; i < team.length; i++) {
-        document.getElementById("grid").innerHTML += `
-        <div class="card text-center" style="width: 18rem;">
-            <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 id="titolo" class="card-title">${team[i]["nome"]}</h5>
-                <p class="card-text">${team[i]["ruolo"]}</p>
-            </div>
+    document.getElementById("grid").innerHTML += `
+    <div class="row">
+    <div class="col-4">
+        <div class="card">
+        <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
+        </div>
+    </div>
         `;
     /*
     for(let key in listaFilm[i]){
@@ -77,3 +95,12 @@ for (let i = 0; i < team.length; i++) {
     }
     */
 }
+
+
+/*<div class="card text-center" style="width: 18rem;">
+            <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 id="titolo" class="card-title">${team[i]["nome"]}</h5>
+                <p class="card-text">${team[i]["ruolo"]}</p>
+            </div>
+        </div>*/
