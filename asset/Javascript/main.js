@@ -47,7 +47,15 @@ let team =
     
 ];
 
+
 console.log(team)
+
+for (let i = 0; i < team.length; i++) {
+    for (let key in team[i]) {
+        console.log(team[i][key]);
+        console.log(key);
+    }
+}
 
 /*Milestone 2: stampare i dati all'interno di un contenitore nella pagina html in modo dinamico, creando per 
 ciascun membro del team un elemento che conterrà i suoi dati.*/
