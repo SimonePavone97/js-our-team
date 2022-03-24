@@ -79,12 +79,12 @@ ciascun membro del team un elemento che conterrà i suoi dati.*/
 for (let i = 0; i < team.length; i++) {
     document.getElementById("grid").innerHTML += `
     <div class="row">
-    <div class="col-4">
+    <div class="col">
         <div class="card">
         <img src="./asset/img/${team[i]["foto"]}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">${team[i]["nome"]}</h5>
+            <p class="card-text">${team[i]["ruolo"]}</p>
         </div>
         </div>
     </div>
